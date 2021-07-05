@@ -6,60 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- this is a navbar at the top of the document  -->
+    <!-- navbar starts -->
     <nav class="navbar">
+        <!-- left-links-wrapper in header  -->
         <div class="left-header-links-wrapper">
-            <a class="navlink" href="">About</a>
-            <a class="navlink" href="">Store</a>
+            <!-- About div -->
+            <div class="navlink-wrapper">
+                <a class="navlink" href="">About</a>
+            </div>
+            <!-- Store div -->
+            <div class="navlink-wrapper">
+                <a class="navlink" href="">Store</a>
+            </div>
         </div>
 
+        <!-- right-links-wrapper in header  -->
         <div class="right-header-links-wrapper">
-            <a class=" navlink" href="">Gmail</a>
-            <a class="navlink" href="#">Images</a>
-            <a class="navlink" href="#"><img src="" alt=""></a>
+            <!-- Gmail div -->
+            <div class="navlink-wrapper">
+                <a class=" navlink" href="">Gmail</a>
+            </div>
+
+            <!-- profile-photo div -->
+            <div class="navlink-wrapper">
+                <a class="navlink" href="#">Images</a>
+            </div>
+            <div class="navlink-wrapper profile-photo">
+
+            </div>
         </div>
     </nav>
+    <!-- navbar ends -->
 
-    <!-- Form at the center of the page -->
+    <!-- Form starts -->
     <form>
-        <h1 class="form-title">Google</h1>
-
+        <!-- Google logo div -->
+        <div class="form-title">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div> 
+        
+        <!-- searchbar div -->
         <div class="searchbar-wrapper">
+            <!-- add 'linkable' serach-icon to the left of search -->
+            <div class="search-icon-wrapper">
+                <a href="#">
+                    <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                </a>  
+            </div> 
+
+            <!-- div containing the search bar -->
+            <div class="centre-searchbar-wrapper">
             <input class="searchbar" type="search" name="" id="">
-            <!-- we will add icons ::before and ::after the search bar element -->
+            </div>
+
+            <!-- add 'linkable' serach-icon to the left of search -->
+            <div class="microphone-icon-wrapper">
+                <a href="#">
+                    <i class="fa-solid fa-microphone-lines"></i></a>
+            </div> <!-- add icons -->
         </div>
 
+        <!-- search links wrapper -->
         <div class="form-links-wrapper">
+            <!-- Google search div -->
             <div class="form-link-wrapper">
                 <a class="form-link" href="">Google Search</a>
-            </div class="form-link-wrapper">
-            <div>
+            </div>
+            <!-- 'I'm Feeling Lucky' div -->
+            <div class="form-link-wrapper">
                 <a class="form-link" href="#">I'm Feeling Lucky</a>
             </div>
         </div>
     </form>
+    <!-- form  ends -->
 
-
-
+    <!-- Footer starts -->
     <footer>
+        <!-- left-side links footer-wrapper -->
         <div class="left-footer-links-wrapper">
-            <a class="footer-link" href="#">Advertising</a>
-            <a class="footer-link" href="#">Business</a>
-            <a class="footer-link" href="#">How Search works</a>
+            <!-- Advertising div-->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">Advertising</a>
+            </div>
+            <!-- Business div-->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">Business</a>
+            </div>
+            <!-- 'How it works' div-->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">How Search works</a>
+            </div>
         </div>
 
-        <p class="footer-p">Carbon neutral since 2007</p>
+        <!-- central-paragraph footer-wrapper -->
+        <div class="center-footer-p-wrapper">
+            <p class="footer-p">Carbon neutral since 2007</p>
+        </div>
 
+        <!-- right-side links footer-wrapper -->
         <div class="right-footer-links-wrapper">
-            <a class="footer-link" href="#">Privacy</a>
-            <a class="footer-link" href="#">Terms</a>
-            <a class="footer-link" href="#">Settings</a>
+            <!-- Privacy div -->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">Privacy</a>
+            </div>
+            <!-- Terms div -->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">Terms</a>
+            </div>
+            <!-- Settings div -->
+            <div class="footer-link-wrapper">
+                <a class="footer-link" href="#">Settings</a>
+            </div>
         </div>
     </footer>
-
+    <!-- Footer starts -->
 </body>
 
 </html>
