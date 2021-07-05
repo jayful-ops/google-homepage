@@ -50,7 +50,7 @@
 /* Remove text-decoration from all links on the page */
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Lato", sans-serif;
 }
 
@@ -173,7 +173,7 @@ footer {
 .footer-p {
   padding: 1rem;
   text-align: center;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Lato", sans-serif;
 }
 
