@@ -1,3 +1,46 @@
+/* Google fonts class*/
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  padding: 0.25rem;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Search icon animation flickering animation*/
+#search-icon {
+  text-shadow: 0 0 0.5px #fff, 0 0 0.4px #fff, 0 0 0.3px #fff, 0 0 0.2px #fff,
+    0 0 0.1px #fff, 0 0 0.05px #fff, 0 0 0.01px #fff;
+  background-color: black;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+} /* Search icon animation ends*/
+
 /* Reset all margins */
 * {
   margin: 0%;
@@ -7,7 +50,8 @@
 /* Remove text-decoration from all links on the page */
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Lato", sans-serif;
 }
 
 /* Start of the navbar */
@@ -39,8 +83,7 @@ a {
   width: 2rem;
   background-size: cover;
   padding: 0.5rem;
-}
-/* End of the navbar */
+} /* End of the navbar */
 
 /* Start of the form */
 form {
@@ -49,7 +92,6 @@ form {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: coral;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -63,32 +105,39 @@ form {
 
 .form-link-wrapper {
   margin: 1rem;
+  background-color: rgba(211, 211, 211, 0.329);
+  padding: 0.6rem 1rem;
+  border-radius: 1%;
 }
 
 .searchbar {
-  width: 50vw;
-  height: 2rem;
+  width: 350px;
+  height: 35px;
   border: transparent;
+  margin: 0 3px;
 }
 
-.centre-searchbar-wrapper {
+/* .centre-searchbar-wrapper {
   border-top: 1px solid;
   border-bottom: 1px solid;
-}
+} */
 
 .searchbar-wrapper {
   display: flex;
   border: 1px solid;
   border-radius: 24px;
-  padding: 1.5px 13px;
-  background-color: teal;
+  padding: 0px 10px;
+  background-color: black;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  box-shadow: 1rem 3px 1em rgba(255, 0, 0, 0.6), -2em -0.5em 0.4em olive;
+  margin-top: 1rem;
 }
 
 .search-icon-wrapper,
 .microphone-icon-wrapper {
   height: 2rem;
   width: 2rem;
-  background-color: white;
 }
 
 .search-icon-wrapper {
@@ -97,14 +146,23 @@ form {
 
 .microphone-icon-wrapper {
   border: 1px solid;
+  background-color: rgb(0, 0, 0);
 }
 
-/* End of the form */
+#search-icon,
+#microphone-icon {
+  color: rgb(255, 208, 0);
+}
+
+#microphone-icon {
+  text-shadow: 0 0 1px #fff, 0 0 0.9px #fff, 0 0 0.8px #fff, 0 0 0.7px;
+} /* End of the form */
 
 /* Start of the footer */
 
 footer {
-  background-color: rgba(34, 139, 34, 0.788);
+  background-color: rgb(255, 240, 240);
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* flex-wrap is great! */
@@ -115,6 +173,8 @@ footer {
 .footer-p {
   padding: 1rem;
   text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 900px) {
@@ -140,7 +200,7 @@ footer {
 .right-footer-links-wrapper {
   display: flex;
   margin: 0;
-  background: greenyellow;
+  background-color: rgb(255, 240, 240);
 }
 
 .footer-link-wrapper {
