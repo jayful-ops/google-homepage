@@ -20,8 +20,13 @@
   padding: 0%;
 }
 
-/* Remove text-decoration from all links on the page */
-a {
+/* Remove text-decoration from all links on page 1 */
+.navlink,
+.material-icons,
+.microphone-icon-link,
+.form-link,
+.footer-link,
+.search-icon-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
   font-family: "Lato", sans-serif;
@@ -29,7 +34,8 @@ a {
   transition: 0.2s;
   transition-delay: 0ms;
 }
-/* Small a:hover transition */
+
+/* Small a:hover transition for specific <a>'s*/
 .navlink-wrapper a:hover,
 .footer-link-wrapper a:hover {
   font-size: 1.5rem;
@@ -69,7 +75,7 @@ a {
 } /* NAVBAR ENDS */
 
 /* FORM STARTS */
-form {
+.form-page-1 {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -206,7 +212,7 @@ form {
 } /* FORM ENDS */
 
 /* FOOTER STARTS */
-footer {
+.footer-page-1 {
   background-color: rgba(255, 240, 240, 0.9);
   width: 100vw;
   display: flex;
@@ -260,3 +266,246 @@ footer {
   padding: 1rem;
 }
 /* FOOTER ENDS */
+
+/* Page 2 */
+
+/* styling page2.html's nav-bar  */
+
+/* Syling the logo from page 2*/
+.form-page-2-title-wrapper {
+  width: auto;
+  height: 35px;
+  background-color: yellowgreen;
+  margin: 1rem 50px;
+}
+
+.form-page-2-title {
+  width: 100px;
+}
+
+/* styling the searchbar from page 2 */
+#searchbar-page-2 {
+  width: 350px;
+  height: 35px;
+}
+
+.searchbar-wrapper-page-2 {
+  display: flex;
+  border: 1px solid;
+  border-radius: 24px;
+  padding: 0px 10px;
+  background-color: black;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  margin: 1rem;
+  width: 475px;
+  height: 35px;
+}
+
+.centre-searchbar-wrapper-page-2 {
+  width: 370px;
+}
+
+.form-page-2 {
+  display: flex;
+}
+
+/* navbar justify-content space-between - page 2 */
+.upper-nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* STILL TESTING TO OBTAIN ICONS ON THE RIGHT HAND SIDE OF NAVBAR */
+.settings-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.face-icon {
+  margin: 5px;
+  padding: 0.25rem;
+}
+/* END OF TEST */
+
+.profile-photo {
+  margin-right: 1rem;
+}
+
+/* lower nav-bar menu wrapper from page 2 */
+.lower-nav-bar-menu-wrapper {
+  display: flex;
+  margin: 0 0 0;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 550px;
+  margin-left: 215px;
+}
+
+/* links inside of lower nav-bar menu from page 2 wrapper */
+.lower-nav-bar-menu-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+/* left side lower nav-bar menu customization from page 2 starts */
+.left-side-lower-nav-bar-menu-wrapper {
+  display: flex;
+}
+
+.nav-link-wrapper {
+  margin: 5px;
+}
+
+.results-count-and-speed-wrapper {
+  display: flex;
+  margin-left: 215px;
+}
+
+.results-count,
+.speed {
+  padding: 2px;
+}
+/* left side lower nav-bar menu customization from page 2 starts */
+
+/* articles customization from page 2 starts */
+.articles-list-wrapper {
+  margin: 25px 215px;
+  width: 540px;
+}
+
+.article-wrapper {
+  margin: 25px 0;
+}
+
+.url-link {
+  text-decoration: none;
+  color: black;
+}
+
+.meta-title-link {
+  text-decoration: none;
+}
+
+.meta-title-link:hover {
+  text-decoration: underline;
+}
+/* article customization ends */
+
+/* related search section from page 2 */
+.related-searches-section-wrapper {
+  margin-left: 215px;
+}
+
+.related-result-title-wrapper {
+  margin: 30px 0 10px;
+}
+
+.related-result-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.software-list-wrapper {
+  display: flex;
+}
+
+.software-wrapper {
+  margin: 2px;
+  background-color: blue;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  height: 120px;
+}
+
+.wordpress,
+.google-web-designer {
+  height: 70px;
+  width: auto;
+}
+
+/* additional suggestions  */
+.additional-suggestions-section-wrapper {
+  display: flex;
+  margin-left: 215px;
+}
+
+.lefthand-additional-links,
+.righthand-additional-links {
+  padding: 2px;
+}
+
+.righthand-additional-links {
+  margin-left: 10px;
+}
+
+.additional-link-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: rgba(228, 228, 235, 0.801);
+  margin: 10px 0px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 8px;
+  font-size: 14px;
+  width: 280px;
+}
+
+.additional-link-wrapper a {
+  padding: 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+/* .bottom-pager section */
+.bottom-pager-wrapper {
+  margin-left: 215px;
+}
+
+.bottom-pager {
+  display: flex;
+}
+
+/* DO THIS PROPERLY, FLEX TOP AND BOTTOM FOR HOVER EFFECT */
+.google-multiple-o-pager,
+.google-multiple-o-pager-pointer,
+.numbers,
+.next {
+  margin-right: 10px;
+}
+
+/* footer from page 2 */
+.footer-page-2 {
+  background: rgba(228, 228, 235, 0.801);
+  width: 100vw;
+  padding: 5px;
+  margin-top: 30px;
+  position: absolute;
+  padding-left: 215px;
+}
+
+.upper-footer-links-wrapper,
+.lower-footer-links-wrapper {
+  display: flex;
+  margin: 10px 0;
+}
+
+.footer-link-wrapper-page-2 {
+  margin: 0 10px;
+}
+
+.footer-link-wrapper-page-2 a {
+  text-decoration: none;
+  color: black;
+}
