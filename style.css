@@ -267,16 +267,42 @@
 }
 /* FOOTER ENDS */
 
-/* Page 2 */
+/* _____________________________________________________ */
+
+/* PAGE 2 */
+
+.body-wrapper-page-2 {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
 
 /* styling page2.html's nav-bar  */
+.nav-bar {
+  width: 100%;
+  background-color: rgba(117, 117, 136, 0.192);
+}
+
+/* ///////////////////////////// */
+
+/* .lefthand-grid-div {
+  background-color: rgba(0, 255, 255, 0.185);
+  margin: 0;
+}
+
+.righthand-grid-div {
+  background-color: crimson;
+  margin: 0%;
+} */
+
+/* ///////////////////////////// */
 
 /* Syling the logo from page 2*/
-.form-page-2-title-wrapper {
+.form-page-2-logo-wrapper {
   width: auto;
   height: 35px;
   background-color: yellowgreen;
-  margin: 1rem 50px;
+  margin: 1rem 30px 1rem 50px;
 }
 
 .form-page-2-title {
@@ -285,7 +311,7 @@
 
 /* styling the searchbar from page 2 */
 #searchbar-page-2 {
-  width: 350px;
+  width: 435px;
   height: 35px;
 }
 
@@ -298,7 +324,7 @@
   border-top-color: transparent;
   border-bottom-color: transparent;
   margin: 1rem;
-  width: 475px;
+  width: 550px;
   height: 35px;
 }
 
@@ -310,12 +336,14 @@
   display: flex;
 }
 
-/* navbar justify-content space-between - page 2 */
+/* NAV-BAR JUSTIFY-CONTENT SPACE-BETWEEN - page 2 */
 .upper-nav-bar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  width: auto;
+  padding-right: 2vw;
 }
 
 /* STILL TESTING TO OBTAIN ICONS ON THE RIGHT HAND SIDE OF NAVBAR */
@@ -331,10 +359,6 @@
 }
 /* END OF TEST */
 
-.profile-photo {
-  margin-right: 1rem;
-}
-
 /* lower nav-bar menu wrapper from page 2 */
 .lower-nav-bar-menu-wrapper {
   display: flex;
@@ -342,8 +366,8 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  width: 550px;
-  margin-left: 215px;
+  width: 545px;
+  margin-left: 211px;
 }
 
 /* links inside of lower nav-bar menu from page 2 wrapper */
@@ -363,19 +387,30 @@
 
 .results-count-and-speed-wrapper {
   display: flex;
-  margin-left: 215px;
+  margin-left: 214px;
 }
 
 .results-count,
 .speed {
   padding: 2px;
 }
-/* left side lower nav-bar menu customization from page 2 starts */
 
-/* articles customization from page 2 starts */
+/* PRIMARY SUGGESTIONS SECTION STARTS (page2.html) */
+
+/* This is the 2 column grid for the articles suggestions sections */
+.tiered-articles-suggestions {
+  margin: 0;
+  background-color: rgba(255, 166, 0, 0.644);
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+
 .articles-list-wrapper {
-  margin: 25px 215px;
+  margin: 0 0 25px 215px;
+  padding-top: 1px;
   width: 540px;
+  background-color: rgba(137, 43, 226, 0.178);
+  border: transparent;
 }
 
 .article-wrapper {
@@ -384,25 +419,63 @@
 
 .url-link {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .meta-title-link {
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 550;
 }
 
 .meta-title-link:hover {
   text-decoration: underline;
 }
-/* article customization ends */
 
-/* related search section from page 2 */
+.meta-description {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* PRIMARY SUGGESTIONS SECTION ENDS */
+
+/* RELATED SEARCHES SECTION FROM PAGE 2 */
+/* set the margin correctly */
 .related-searches-section-wrapper {
-  margin-left: 215px;
+  margin-left: 214px;
+  width: 562px;
+}
+
+.related-searches-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+/* set the margin-bottom and border-bottom for both articles */
+.website-making-software,
+.website-building-software {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.see-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto 20px;
+  width: 200px;
+  height: 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(141, 141, 143, 0.404);
+}
+
+.see-more-button a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .related-result-title-wrapper {
-  margin: 30px 0 10px;
+  margin: 20px 0 10px;
 }
 
 .related-result-title-link {
@@ -412,30 +485,46 @@
 
 .software-list-wrapper {
   display: flex;
+  background-color: darkred;
 }
 
 .software-wrapper {
   margin: 2px;
-  background-color: blue;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-end;
+  text-align: left;
   padding: 5px;
   height: 120px;
+  position: relative;
+  width: auto;
+  background-color: rgba(0, 128, 128, 0.068);
 }
 
-.wordpress,
-.google-web-designer {
-  height: 70px;
+/* REMEMBER TO ADD INDIVIDUAL PHOTOS FOR EACH SOFTWARE */
+.software-photo {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/WordPress-512.png);
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto 20px;
+}
+
+.sofware-name {
+  height: 40px;
   width: auto;
+  background-color: yellow;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto 0px;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 /* additional suggestions  */
 .additional-suggestions-section-wrapper {
   display: flex;
-  margin-left: 215px;
+  margin-left: 214px;
 }
 
 .lefthand-additional-links,
@@ -458,7 +547,7 @@
   border-radius: 25px;
   padding: 8px;
   font-size: 14px;
-  width: 280px;
+  width: 260px;
 }
 
 .additional-link-wrapper a {
@@ -470,29 +559,44 @@
 
 /* .bottom-pager section */
 .bottom-pager-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: palegreen;
+  width: 565px;
   margin-left: 215px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.bottom-pager {
+.letters-wrapper,
+.numbers-wrapper {
   display: flex;
 }
 
-/* DO THIS PROPERLY, FLEX TOP AND BOTTOM FOR HOVER EFFECT */
-.google-multiple-o-pager,
-.google-multiple-o-pager-pointer,
-.numbers,
-.next {
-  margin-right: 10px;
+.bottom-pager-letter {
+  margin: 5px;
 }
+
+.bottom-pager-number {
+  margin: 3px;
+}
+
+/* COME BACK TO FINISH THIS HOVER EFFECT */
+.letter-g-next:hover + .number-next {
+  color: red;
+  font-size: 1rem;
+}
+/* FINISH HOVER EFFECT ABOVE */
 
 /* footer from page 2 */
 .footer-page-2 {
   background: rgba(228, 228, 235, 0.801);
-  width: 100vw;
-  padding: 5px;
-  margin-top: 30px;
-  position: absolute;
-  padding-left: 215px;
+  width: auto;
+  padding: 5px 0;
+  padding-left: 210px;
 }
 
 .upper-footer-links-wrapper,
@@ -503,6 +607,7 @@
 
 .footer-link-wrapper-page-2 {
   margin: 0 10px;
+  white-space: nowrap;
 }
 
 .footer-link-wrapper-page-2 a {
