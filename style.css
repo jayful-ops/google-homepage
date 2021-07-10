@@ -275,33 +275,21 @@
   width: auto;
   margin: 0;
   padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
 }
 
 /* styling page2.html's nav-bar  */
 .nav-bar {
   width: 100%;
-  background-color: rgba(117, 117, 136, 0.192);
 }
-
-/* ///////////////////////////// */
-
-/* .lefthand-grid-div {
-  background-color: rgba(0, 255, 255, 0.185);
-  margin: 0;
-}
-
-.righthand-grid-div {
-  background-color: crimson;
-  margin: 0%;
-} */
-
-/* ///////////////////////////// */
 
 /* Syling the logo from page 2*/
 .form-page-2-logo-wrapper {
   width: auto;
   height: 35px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   margin: 1rem 30px 1rem 50px;
 }
 
@@ -346,18 +334,12 @@
   padding-right: 2vw;
 }
 
-/* STILL TESTING TO OBTAIN ICONS ON THE RIGHT HAND SIDE OF NAVBAR */
 .settings-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.face-icon {
-  margin: 5px;
-  padding: 0.25rem;
-}
-/* END OF TEST */
 
 /* lower nav-bar menu wrapper from page 2 */
 .lower-nav-bar-menu-wrapper {
@@ -373,7 +355,7 @@
 /* links inside of lower nav-bar menu from page 2 wrapper */
 .lower-nav-bar-menu-wrapper a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* left side lower nav-bar menu customization from page 2 starts */
@@ -387,7 +369,10 @@
 
 .results-count-and-speed-wrapper {
   display: flex;
-  margin-left: 214px;
+  padding-left: 214px;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .results-count,
@@ -400,16 +385,12 @@
 /* This is the 2 column grid for the articles suggestions sections */
 .tiered-articles-suggestions {
   margin: 0;
-  background-color: rgba(255, 166, 0, 0.644);
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
 }
 
 .articles-list-wrapper {
-  margin: 0 0 25px 215px;
+  margin: 0 0 35px 215px;
   padding-top: 1px;
   width: 540px;
-  background-color: rgba(137, 43, 226, 0.178);
   border: transparent;
 }
 
@@ -425,7 +406,8 @@
 .meta-title-link {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 530;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .meta-title-link:hover {
@@ -433,7 +415,7 @@
 }
 
 .meta-description {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* PRIMARY SUGGESTIONS SECTION ENDS */
@@ -442,7 +424,7 @@
 /* set the margin correctly */
 .related-searches-section-wrapper {
   margin-left: 214px;
-  width: 562px;
+  width: 530px;
 }
 
 .related-searches-title {
@@ -471,37 +453,46 @@
 
 .see-more-button a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .related-result-title-wrapper {
   margin: 20px 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.more-vert-div {
+  padding: 0;
+}
+
+.more-vert {
+  height: 5px;
+  font-size: 10px;
 }
 
 .related-result-title-link {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .software-list-wrapper {
   display: flex;
-  background-color: darkred;
 }
 
 .software-wrapper {
-  margin: 2px;
+  margin: 5px;
   align-items: flex-end;
   text-align: left;
   padding: 5px;
-  height: 120px;
+  height: 130px;
   position: relative;
   width: auto;
-  background-color: rgba(0, 128, 128, 0.068);
+  padding: 0;
 }
 
-/* REMEMBER TO ADD INDIVIDUAL PHOTOS FOR EACH SOFTWARE */
+/* RELATED SEARCHES individual articles */
 .software-photo {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/WordPress-512.png);
   height: 80px;
   width: 80px;
   background-position: center;
@@ -510,18 +501,53 @@
 }
 
 .sofware-name {
+  padding-top: 8px;
   height: 40px;
   width: auto;
-  background-color: yellow;
+  background-color: white;
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
   margin: 0 auto 0px;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.8);
 }
+.wordpress {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/WordPress-512.png);
+}
+.google-web-designer {
+  background-image: url(https://cdn.freelogovectors.net/wp-content/uploads/2020/11/google-web-designer-logo.png);
+  height: 80px;
+  width: 70px;
+}
+.webflow {
+  background-image: url(https://pbs.twimg.com/profile_images/1124418991240310784/Tg7Mrqk2.png);
+}
+.adobe-dreamweaver {
+  background-image: url(https://i.pinimg.com/originals/3c/f6/51/3cf651ee758b2f4a3e5f01fff6e1123d.png);
+}
+.visual-studio-code {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png);
+}
+.adobe-xd {
+  background-image: url(https://cdn.freebiesupply.com/logos/large/2x/adobe-xd-logo-png-transparent.png);
+}
+.mobirise {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/76/Mobirise_4_Official_Logo.png);
+}
+.squarespace {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Squarespace_Logo_2019.png/800px-Squarespace_Logo_2019.png);
+}
+.weebly {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAa0gfaRrWTZLqI9OTtYHrM2KcKQ9P3h4_RmJwUhxa56J6SU6aNmcA7zEujRKbJ8lWwg&usqp=CAU);
+}
+.strikingly {
+  background-image: url(https://www.cloudwards.net/wp-content/uploads/2018/04/strikingly-logo.png);
+  padding: 0;
+}
+/* RELATED SEARCHES END */
 
-/* additional suggestions  */
+/* ADDITIONAL SUGGESTIONS  */
 .additional-suggestions-section-wrapper {
   display: flex;
   margin-left: 214px;
@@ -538,23 +564,28 @@
 
 .additional-link-wrapper {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center; */
+  text-align: left;
   align-items: center;
   background: rgba(228, 228, 235, 0.801);
   margin: 10px 0px;
   height: 30px;
   border-radius: 25px;
-  padding: 8px;
+  padding: 10px 20px;
   font-size: 14px;
-  width: 260px;
+  width: 218px;
 }
 
 .additional-link-wrapper a {
-  padding: 20px;
-  white-space: nowrap;
+  padding: 10px;
+  /* white-space: nowrap; */
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+}
+
+.build {
+  font-weight: normal;
 }
 
 /* .bottom-pager section */
@@ -564,7 +595,6 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: palegreen;
   width: 565px;
   margin-left: 215px;
   padding: 1rem;
@@ -612,5 +642,5 @@
 
 .footer-link-wrapper-page-2 a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }

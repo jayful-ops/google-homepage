@@ -64,12 +64,14 @@
                 <div class="nav-link-wrapper settings-wrapper">
                     <!-- The 1st icon is a "light-on" icon -->
                     <div class="sun-icon-wrapper-page-2">
-                                <span class="material-icons face-icon">&#xE87C;</span>
+                                <span class="material-icons">
+                                    light_mode
+                                </span>
                     </div>
                     <!-- The 2nd icon is a "settings" icon -->
                     <div class="settings-icon-wrapper-page-2">
                         <a class="settings-icon-link" href="#">
-                            <span class="material-icons-outlined face-icon">
+                            <span class="material-icons">
                                 settings
                             </span>
                         </a>
@@ -77,7 +79,7 @@
                     <!-- The 3rd icon is an "apps" icon -->
                     <div class="apps-icon-wrapper-page-2">
                                 <a class="apps-icon-link" href="#">
-                                    <span id="apps-icon" class="material-icons-outlined face-icon">
+                                    <span class="material-icons">
                                         apps
                                     </span>
                                 </a>
@@ -127,19 +129,19 @@
                         </div>
             </div>
         </section><!-- LOWER-NAV-BAR-MENU SECTION ENDS -->
-                
-        <!-- RESULTS COUNT & SPEED -->
-        <section class="results-count-and-speed-wrapper">
-            <!-- results count -->
-            <p class="results-count">About 139,000,000 results</p>
-            <!-- speed -->
-            <p class="speed">(0.44 seconds)</p>
-        </section>
     </nav>
     <!-- NAV-BAR ENDS -->
-            
+
+    <!-- RESULTS COUNT & SPEED -->
+    <section class="results-count-and-speed-wrapper">
+        <!-- results count -->
+        <p class="results-count">About 139,000,000 results</p>
+        <!-- speed -->
+        <p class="speed">(0.44 seconds)</p>
+    </section>
+
     <!-- TIERED-ARTICLES-SUGGESTION SECTION STARTS - this section is a GRID with 2 columns -->
-    <div class="tiered-articles-suggestions">   
+    <section class="tiered-articles-suggestions">   
             <!-- GOOGLE MAIN RESULTS LIST STARTS: url, meta title, meta description -->
             <section class="articles-list-wrapper">
                 <!-- SINGLE ARTICLE -->
@@ -369,14 +371,18 @@
             <section class="related-searches-section-wrapper">  
                 <!-- section title -->
                 <h2 class="related-searches-title">Related searches</h2>
-
-                <!-- article in the related-searches section-->
-                <article class="website-making-software">
+                <!-- WEBSITE MAKING SOFTWARE SECTION STARTS -->
+                <section class="website-making-software">
 
                     <!-- article title + toggle menu-->
                     <div class="article-toggle-menu">    
                         <div class="related-result-title-wrapper">
                             <a class="related-result-title-link" href="#">Website making software</a>
+                            <div class="icon-more more-vert-div">
+                                <span class="material-icons more-vert">
+                                    more_vert
+                                </span>
+                            </div>
                         </div>
                         <!-- 
                         <div>
@@ -385,7 +391,7 @@
                         -->
                     </div>
 
-                    <!-- list of proposed software starts -->
+                    <!--1st row of articles in the RELATED-SEARCHES section starts -->
                     <div class="software-list-wrapper">
 
                         <!-- related software  -->
@@ -409,7 +415,7 @@
                         <!-- related software  -->
                         <div class="software-wrapper webflow">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo webflow"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Webflow</a>
@@ -418,7 +424,7 @@
                         <!-- related software  -->
                         <div class="software-wrapper adobe-dreamweaver">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo adobe-dreamweaver"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Adobe Dreamweaver</a>
@@ -427,7 +433,7 @@
                         <!-- related software  -->
                         <div class="software-wrapper visual-studio-code">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo visual-studio-code"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Visual Studio Code</a>
@@ -436,28 +442,33 @@
                         <!-- related software  -->
                         <div class="software-wrapper adobe-xd">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo adobe-xd"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Adobe XD</a>
                             </div>
                         </div>
-                    </div> <!--list of proposed software ends -->
+                    </div> <!-- 1st row of articles in the RELATED-SEARCHES section ends-->
 
                     <!-- see more 'button' -->
                     <div class="see-more-button">
                         <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
                         <a href="#">See more</a>
                     </div>
-                </article>
+                </section><!-- WEBSITE MAKING SOFTWARE SECTION ENDS -->
                 
-                <!-- article in the related-searches section-->
-                <article class="website-building-software">
+                <!--WEBSITE BUILDING SOFTWARE SECTION STARTS -->
+                <section class="website-building-software">
 
                     <!-- article title + toggle menu-->
                     <div class="article-toggle-menu">    
                         <div class="related-result-title-wrapper">
                             <a class="related-result-title-link" href="#">Website building software</a>
+                            <div class="icon-more more-vert-div">
+                                <span class="material-icons more-vert">
+                                more_vert
+                                </span>
+                            </div>
                         </div>
                         <!-- 
                         <div>
@@ -466,12 +477,12 @@
                         -->
                     </div>
 
-                    <!-- list of proposed software starts -->
+                    <!-- 2nd row of articles in the RELATED-SEARCHES section starts -->
                     <div class="software-list-wrapper">
                         <!-- related software  -->
                         <div class="software-wrapper mobirise">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo mobirise"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Mobirise</a>
@@ -480,16 +491,16 @@
                         <!-- related software  -->
                         <div class="software-wrapper squarespace">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo squarespace"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Squarespace</a>
                             </div>
                         </div>
                         <!-- related software  -->
-                        <div class="software-wrapper weekbly">
+                        <div class="software-wrapper weebly">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo weekbly"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Weekbly</a>
@@ -498,7 +509,7 @@
                         <!-- related software  -->
                         <div class="software-wrapper wordpress">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo strikingly"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>Strikingly</a>
@@ -507,38 +518,53 @@
                         <!-- related software  -->
                         <div class="software-wrapper">
                             <!-- photo div trick using background-img -->
-                            <div class="software-photo"></div>
+                            <div class="software-photo wordpress"></div>
                             <!-- fig caption trick -->
                             <div class="sofware-name">
                                 <a>WordPress</a>
                             </div>
                         </div>
-                    </div> <!--list of proposed software ends -->
+                    </div> <!-- 2nd row of articles in the RELATED-SEARCHES section ends-->
 
                     <!-- see more 'button' -->
                     <div class="see-more-button">
                         <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
                         <a href="#">See more</a>
                     </div>
-                </article>
-
+                </section><!--WEBSITE BUILDING SOFTWARE SECTION ENDS -->
             </section><!-- GOOGLE RELATED SEARCHES LIST ENDS-->
 
             <!-- GOOGLE ADDITIONAL SUGGESTIONS STARTS -->
             <section class="additional-suggestions-section-wrapper">
                 <div class="lefthand-additional-links">
-                    <div class="additional-link-wrapper"><a href="#">best website builder</a></div>
-                    <div class="additional-link-wrapper"><a href="#">free website builder</a></div>
-                    <div class="additional-link-wrapper"><a href="#">create website google</a></div>
-                    <div class="additional-link-wrapper"><a href="#">how to build a website from scratch</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">best website builder</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">free website builder</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">create website google</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">how to <span class="build">build</span> a website from scratch</a></div>
                 </div>
                 <div class="righthand-additional-links">
-                    <div class="additional-link-wrapper"><a href="#">google website</a></div>
-                    <div class="additional-link-wrapper"><a href="#">website maker</a></div>
-                    <div class="additional-link-wrapper"><a href="#">creating a website for your business</a></div>
-                    <div class="additional-link-wrapper"><a href="#">how to build a website from scratch html</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">google website</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">website maker</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">creating a website for your business</a></div>
+                    <div class="additional-link-wrapper"><span class="material-icons">
+                        search
+                    </span><a href="#">how to <span class="build">build</span> a website from scratch html</a></div>
                 </div>
-            </section><!-- aGOOGLE ADDITIONAL SUGGESTIONS ENDS -->
+            </section><!-- GOOGLE ADDITIONAL SUGGESTIONS ENDS -->
 
             <!-- There is a COOL PAGER NEAR THE FOOTER of Google page "Goooooooooogle" -->
             <section class="bottom-pager-wrapper">
@@ -633,7 +659,7 @@
                 </div>
             </section><!-- COOL PAGER ENDS -->
         
-    </div><!-- TIERED-ARTICLES-SUGGESTION SECTION ENDS -->
+    </section><!-- TIERED-ARTICLES-SUGGESTION SECTION ENDS -->
             
     <!-- FOOTER STARTS -->
     <footer class="footer-page-2">
