@@ -276,7 +276,7 @@
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.8);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.8rem;
 }
 
@@ -398,6 +398,11 @@
   margin: 25px 0;
 }
 
+.url-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .url-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
@@ -428,8 +433,7 @@
 }
 
 .related-searches-title {
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+  padding-bottom: 0px; */
 }
 
 /* set the margin-bottom and border-bottom for both articles */
@@ -456,19 +460,32 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
+.related-searches-section-title{
+  display: flex;
+  align-items: center ;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
 .related-result-title-wrapper {
   margin: 20px 0 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.related-result-title-wrapper:hover {
+/* COME BACK HERE AND CREATE COLLAPSIBLE ELEMENT */
 }
 
 .more-vert-div {
-  padding: 0;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .more-vert {
   height: 5px;
-  font-size: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .related-result-title-link {
@@ -499,7 +516,6 @@
   background-size: cover;
   margin: 0 auto 20px;
 }
-
 .sofware-name {
   padding-top: 8px;
   height: 40px;
@@ -595,29 +611,56 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 565px;
-  margin-left: 215px;
-  padding: 1rem;
+  width: 250px;
   box-sizing: border-box;
+  margin: 30px 360px;
+  flex-direction: row;
 }
 
-.letters-wrapper,
-.numbers-wrapper {
+.letters-G-O-wrapper {
   display: flex;
 }
 
-.bottom-pager-letter {
-  margin: 5px;
+.letters-gle-wrapper {
+  display: flex;
 }
 
-.bottom-pager-number {
-  margin: 3px;
+.o {
+  color: rgb(236, 236, 3);
+  font-size: 16px;
 }
 
-/* COME BACK TO FINISH THIS HOVER EFFECT */
-.letter-g-next:hover + .number-next {
+.o:hover {
   color: red;
-  font-size: 1rem;
+  cursor: pointer;
+  pager-number {
+    color: blue;
+  }
+}
+
+.g {
+  font-size: 16px;
+  color: blue;
+}
+
+.l {
+  font-size: 16px;
+  color: green;
+}
+
+.e {
+  font-size: 16px;
+  color: red;
+}
+
+.arrow-right,
+.number-next {
+  color: blue;
+  font-size: 14px;
+}
+
+.number-one-in-pager {
+  text-align: right;
 }
 /* FINISH HOVER EFFECT ABOVE */
 
