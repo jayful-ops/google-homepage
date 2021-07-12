@@ -365,9 +365,21 @@
 
 .nav-link-wrapper {
   margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.triple-icon-header-right:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+}
+
+.profile-photo:hover {
+  cursor: pointer;
 }
 
 .results-count-and-speed-wrapper {
+  color: rgba(0, 0, 0, 0.6);
   display: flex;
   padding-left: 214px;
   padding-top: 5px;
@@ -433,14 +445,44 @@
 }
 
 .related-searches-title {
-  padding-bottom: 0px; */
+  padding-bottom: 0px;
 }
 
-/* set the margin-bottom and border-bottom for both articles */
+/* RELATED SEARCHES --> TOGGLE EFFECT STARTS*/
+.website-making-software label,
+.website-building-software label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+}
+
+input#menu-website-making-software,
+input#menu-website-building-software {
+  display: none;
+}
+
+.related-software-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+input:checked ~ .related-software-content {
+  max-height: 100%;
+  padding-top: 10px;
+}
+/* TOGGLE EFFECT ENDS */
+
 .website-making-software,
 .website-building-software {
   margin-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.website-making-software {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .see-more-button {
@@ -448,11 +490,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 20px auto 20px;
+  margin: 0px auto 20px;
   width: 200px;
   height: 2rem;
   border-radius: 24px;
   border: 1px solid rgba(141, 141, 143, 0.404);
+}
+
+.btn-website-making-software {
+  margin: 25px auto 20px;
 }
 
 .see-more-button a {
@@ -460,21 +506,18 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-.related-searches-section-title{
+.related-searches-section-title {
   display: flex;
-  align-items: center ;
+  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 .related-result-title-wrapper {
-  margin: 20px 0 10px;
+  margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.related-result-title-wrapper:hover {
-/* COME BACK HERE AND CREATE COLLAPSIBLE ELEMENT */
+  background-color: aqua;
 }
 
 .more-vert-div {
@@ -683,7 +726,15 @@
   white-space: nowrap;
 }
 
-.footer-link-wrapper-page-2 a {
+.footer-link-wrapper-page-2 a,
+.past-activity,
+.footer-page-2 {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.address {
+  font-style: normal;
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.8);
 }

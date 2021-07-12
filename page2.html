@@ -25,22 +25,22 @@
                         
                 <!-- THE SEARCHBAR -->
                 <div class="searchbar-wrapper-page-2">
-                            <!-- COMMENT OUT THE PREVIOUS SEARCH-ICON, previously to the left of the searchbar -->
-                            <div class="search-icon-wrapper">
+                    <!-- COMMENT OUT THE PREVIOUS SEARCH-ICON, previously to the left of the searchbar -->
+                    <div class="search-icon-wrapper">
                                 <!-- <a class="search-icon-link" href="#">
                                     <span id="search-icon" class="material-icons">
                                         search
                                     </span>
                                 </a> -->
-                            </div>
+                    </div>
                         
-                            <!-- div containing the search bar -->
-                            <div class="centre-searchbar-wrapper">
+                    <!-- div containing the search bar -->
+                    <div class="centre-searchbar-wrapper">
                                 <input class="searchbar" type="search" name="" id="searchbar-page-2">
-                            </div>
+                    </div>
                         
-                            <!-- place  MICROPHONE-ICON  &  SEARCH-ICON  to the right of searchbar -->
-                            <div class="microphone-icon-wrapper-2">
+                    <!-- place  MICROPHONE-ICON  &  SEARCH-ICON  to the right of searchbar -->
+                    <div class="microphone-icon-wrapper-2">
                                 <!-- MICROPHONE-ICON -->
                                 <a class="microphone-icon-link" href="#">
                                     <span id="microphone-icon" class="material-icons">
@@ -53,7 +53,7 @@
                                         search
                                     </span>
                                 </a>
-                            </div>
+                    </div>
                 </div>
             </form><!-- FORM  ENDS -->
 
@@ -63,13 +63,13 @@
                 <!-- this div contains 3 icons juxtaposed to the left of the profile photo -->
                 <div class="nav-link-wrapper settings-wrapper">
                     <!-- The 1st icon is a "light-on" icon -->
-                    <div class="sun-icon-wrapper-page-2">
+                    <div class="sun-icon-wrapper-page-2 triple-icon-header-right">
                                 <span class="material-icons">
                                     light_mode
                                 </span>
                     </div>
                     <!-- The 2nd icon is a "settings" icon -->
-                    <div class="settings-icon-wrapper-page-2">
+                    <div class="settings-icon-wrapper-page-2 triple-icon-header-right">
                         <a class="settings-icon-link" href="#">
                             <span class="material-icons">
                                 settings
@@ -77,7 +77,7 @@
                         </a>
                     </div>
                     <!-- The 3rd icon is an "apps" icon -->
-                    <div class="apps-icon-wrapper-page-2">
+                    <div class="apps-icon-wrapper-page-2 triple-icon-header-right">
                                 <a class="apps-icon-link" href="#">
                                     <span class="material-icons">
                                         apps
@@ -98,26 +98,57 @@
             <div class="left-side-lower-nav-bar-menu-wrapper">
                         <!-- All div -->
                         <div class="nav-link-wrapper">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    search
+                                </span>
+                            </div>
                             <a class="nav-link" href="#">All</a>
                         </div>
                         <!-- News div -->
                         <div class="nav-link-wrapper">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    feed
+                                </span>
+                            </div>
                             <a class="nav-link" href="#">News</a>
                         </div>
                         <!-- Videos div -->
                         <div class="nav-link-wrapper">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    ondemand_video
+                                </span>
+                            </div>
                             <a class="nav-link" href="#">Videos</a>
                         </div>
                         <!-- Maps div -->
                         <div class="nav-link-wrapper">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    location_on
+                                </span>
+                            </div>
                             <a class="nav-link" href="#">Maps</a>
                         </div>
                         <!-- Shopping div -->
                         <div class="nav-link-wrapper">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    local_offer
+                                </span>
+                            </div>
                             <a class="nav-link" href="#">Shopping</a>
                         </div>
                         <!-- More div -->
-                        <div class="nav-link-wrapper">
+                        <div class="nav-link-wrapper more-vert-div">
+                            <div class="icon-more">
+                                <span class="material-icons">
+                                    more_vert
+                                </span>
+                            </div>
+                            
                             <a class="nav-link" href="#">More</a>
                         </div>
             </div>
@@ -153,7 +184,7 @@
                                 <span class="material-icons more-vert">
                                 more_vert
                                 </span>
-                            </div>
+                        </div>
                     </div>
                     
                     <!-- meta title -->
@@ -424,8 +455,6 @@
 
             <!-- GOOGLE RELATED SEARCHES LIST STARTS-->
             <section class="related-searches-section-wrapper">  
-                <!-- WEBSITE MAKING SOFTWARE SECTION STARTS -->
-                <!-- section title -->
                 <div class="related-searches-section-title">
                     <h2 class="related-searches-title">Related searches</h2>
                     <div class="icon-more more-vert-div">
@@ -434,165 +463,163 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <!-- WEBSITE MAKING SOFTWARE SECTION STARTS -->
                 <section class="website-making-software">
 
-                    <!-- article title + toggle menu-->
-                    <div class="article-toggle-menu">    
-                        <div class="related-result-title-wrapper">
-                            <a class="related-result-title-link" href="#">Website making software</a>
-                            <div class="icon-more expand-more-div">
+                    <input type="checkbox" class="related-searches-dropdown" id="menu-website-making-software">
+
+                    <label for="menu-website-making-software">
+                        <div> 
+                            Website making software
+                        </div>
+                        <div class="icon-more expand-more-div">
                                 <span class="material-icons expand-more">
                                     expand_more
                                 </span>
-                            </div>
                         </div>
-                        <!-- 
-                        <div>
-                            ADD 'FACING DOWN' ICON IN THE DIV, RIGHT OF TITLE 
-                        </div>    
-                        -->
+                    </label>
+                    
+                    <div class="related-software-content">
+                        <!--1st row of articles in the RELATED-SEARCHES section starts -->
+                        <div class="software-list-wrapper">
+
+                            <!-- related software  -->
+                            <div class="software-wrapper">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo wordpress"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>WordPress</a>
+                                </div>
+                            </div>
+                            <!-- related software  -->
+                            <div class="software-wrapper">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo google-web-designer"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Google Web Designer</a>
+                                </div>
+                            </div>
+                            <!-- related software  -->
+                            <div class="software-wrapper webflow">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo webflow"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Webflow</a>
+                                </div>
+                            </div>
+                            <!-- related software  -->
+                            <div class="software-wrapper adobe-dreamweaver">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo adobe-dreamweaver"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Adobe Dreamweaver</a>
+                                </div>
+                            </div>
+                            <!-- related software  -->
+                            <div class="software-wrapper visual-studio-code">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo visual-studio-code"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Visual Studio Code</a>
+                                </div>
+                            </div>
+                            <!-- related software  -->
+                            <div class="software-wrapper adobe-xd">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo adobe-xd"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Adobe XD</a>
+                                </div>
+                            </div>
+                        </div> <!-- 1st row of articles in the RELATED-SEARCHES section ends-->
+
+                        <!-- see more 'button' -->
+                        <div class="see-more-button btn-website-making-software">
+                            <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
+                            <a href="#">See more</a>
+                        </div>
                     </div>
 
-                    <!--1st row of articles in the RELATED-SEARCHES section starts -->
-                    <div class="software-list-wrapper">
-
-                        <!-- related software  -->
-                        <div class="software-wrapper">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo wordpress"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>WordPress</a>
-                            </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo google-web-designer"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Google Web Designer</a>
-                            </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper webflow">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo webflow"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Webflow</a>
-                            </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper adobe-dreamweaver">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo adobe-dreamweaver"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Adobe Dreamweaver</a>
-                            </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper visual-studio-code">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo visual-studio-code"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Visual Studio Code</a>
-                            </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper adobe-xd">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo adobe-xd"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Adobe XD</a>
-                            </div>
-                        </div>
-                    </div> <!-- 1st row of articles in the RELATED-SEARCHES section ends-->
-
-                    <!-- see more 'button' -->
-                    <div class="see-more-button">
-                        <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
-                        <a href="#">See more</a>
-                    </div>
                 </section><!-- WEBSITE MAKING SOFTWARE SECTION ENDS -->
                 
                 <!--WEBSITE BUILDING SOFTWARE SECTION STARTS -->
                 <section class="website-building-software">
 
-                    <!-- article title + toggle menu-->
-                    <div class="article-toggle-menu">    
-                        <div class="related-result-title-wrapper">
-                            <a class="related-result-title-link" href="#">Website building software</a>
-                            <div class="icon-more expand-more-div">
-                                <span class="material-icons expand-more">
-                                    expand_more
-                                </span>
-                            </div>
-                        </div>
-                        <!-- 
+                    <input type="checkbox" class="related-searches-dropdown" id="menu-website-building-software">
+
+                    <label for="menu-website-building-software">
                         <div>
-                            ADD 'FACING DOWN' ICON IN THE DIV, RIGHT OF TITLE 
-                        </div>    
-                        -->
-                    </div>
+                            Website building software
+                        </div>
+                        <div class="icon-more expand-more-div">
+                            <span class="material-icons expand-more">
+                                    expand_more
+                            </span>
+                        </div>
+                    </label>
 
-                    <!-- 2nd row of articles in the RELATED-SEARCHES section starts -->
-                    <div class="software-list-wrapper">
-                        <!-- related software  -->
-                        <div class="software-wrapper mobirise">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo mobirise"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Mobirise</a>
+                    <div class="related-software-content">
+                        <!-- 2nd row of articles in the RELATED-SEARCHES section starts -->
+                        <div class="software-list-wrapper">
+                            <!-- related software  -->
+                            <div class="software-wrapper mobirise">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo mobirise"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Mobirise</a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper squarespace">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo squarespace"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Squarespace</a>
+                            <!-- related software  -->
+                            <div class="software-wrapper squarespace">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo squarespace"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Squarespace</a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper weebly">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo weekbly"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Weekbly</a>
+                            <!-- related software  -->
+                            <div class="software-wrapper weebly">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo weekbly"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Weekbly</a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper wordpress">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo strikingly"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>Strikingly</a>
+                            <!-- related software  -->
+                            <div class="software-wrapper wordpress">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo strikingly"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>Strikingly</a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- related software  -->
-                        <div class="software-wrapper">
-                            <!-- photo div trick using background-img -->
-                            <div class="software-photo wordpress"></div>
-                            <!-- fig caption trick -->
-                            <div class="sofware-name">
-                                <a>WordPress</a>
+                            <!-- related software  -->
+                            <div class="software-wrapper">
+                                <!-- photo div trick using background-img -->
+                                <div class="software-photo wordpress"></div>
+                                <!-- fig caption trick -->
+                                <div class="sofware-name">
+                                    <a>WordPress</a>
+                                </div>
                             </div>
-                        </div>
-                    </div> <!-- 2nd row of articles in the RELATED-SEARCHES section ends-->
+                        </div> <!-- 2nd row of articles in the RELATED-SEARCHES section ends-->
 
-                    <!-- see more 'button' -->
-                    <div class="see-more-button">
-                        <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
-                        <a href="#">See more</a>
+                        <!-- see more 'button' -->
+                        <div class="see-more-button">
+                            <!-- ADD "->" ICON INSIDE THE BUTTON, LEFT OF TEXT-->
+                            <a href="#">See more</a>
+                        </div>
                     </div>
                 </section><!--WEBSITE BUILDING SOFTWARE SECTION ENDS -->
             </section><!-- GOOGLE RELATED SEARCHES LIST ENDS-->
@@ -628,6 +655,7 @@
                     </span><a href="#">how to <span class="build">build</span> a website from scratch html</a></div>
                 </div>
             </section><!-- GOOGLE ADDITIONAL SUGGESTIONS ENDS -->
+
 
             <!-- There is a COOL PAGER NEAR THE FOOTER of Google page "Goooooooooogle" -->
             <section class="bottom-pager-wrapper">
@@ -707,12 +735,12 @@
             
     <!-- FOOTER STARTS -->
     <footer class="footer-page-2">
-                <!-- higher-footer-links-wrapper -->
-                <section class="upper-footer-links-wrapper">
-                    <!-- Address div-->
-                    <address class="footer-link-wrapper-page-2" id="address-wrapper">
-                        <p class="Address">Suffolk County, Massachusetts</p>
-                    </address>
+        <!-- higher-footer-links-wrapper -->
+        <section class="upper-footer-links-wrapper">
+            <!-- Address div-->
+            <address class="footer-link-wrapper-page-2" id="address-wrapper">
+                <p class="address">Suffolk County, Massachusetts</p>
+            </address>
             - 
             <!-- past activity div -->
             <div class="footer-link-wrapper-page-2" id="past-activity-wrapper">
